@@ -1,3 +1,7 @@
+import { HiHome, HiUser } from 'react-icons/hi'
+import { HiChatBubbleBottomCenterText, HiEnvelope, HiRectangleGroup, HiViewColumns } from 'react-icons/hi2'
+import Link from 'next/link';
+import {useRouter} from 'next/router'
 //  links
 const links = [
   { name: 'home', path: '/', icon: <HiHome /> },
@@ -10,6 +14,7 @@ const links = [
     icon: <HiChatBubbleBottomCenterText />,
   },
   {
+    
     name: 'contact',
     path: '/contact',
     icon: <HiEnvelope />,
@@ -17,7 +22,13 @@ const links = [
 ];
 
 const Nav = () => {
-  return <nav>nav</nav>;
+  return <nav>
+    <div>
+      {links.map((item, index) => {
+        return <Link key={index} href={item.path}> {item.icon} </Link>
+      })}
+    </div>
+  </nav>;
 };
 
 export default Nav;
