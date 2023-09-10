@@ -19,16 +19,13 @@ const Home = () => {
            <Image src="/index1.png" width={300} height={200}  className="  xl:w-[400px] "/>
          
           <motion.p
-            variants={fadeIn('down',0.3)} initial="hidden" animate="show" exit="hidden" className="font-semibold text-white"
+            variants={fadeIn('down',0.3)} initial="hidden" animate="show" exit="hidden" className="font-semibold text-white mb-6"
             > -YOU BECAME WHAT YOU BELIVE</motion.p>
         </motion.div>
          
         <motion.p
           variants={fadeIn('down',0.4)} initial="hidden" animate="show" exit="hidden" 
-          className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 "> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Porro ea ad dignissimos aspernatur eligendi omnis animi qui!
-          Tempora dolor quibusdam quos amet fugiat temporibus officia,
-          fugit quam excepturi voluptatum laborum!
+          className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 ">Embrace Your Beliefs, Shape Your Reality: Navigate through my portfolio and witness the fusion of dreams turned into digital wonders.
         </motion.p>
         <div className="flex justify-center xl:hidden relative pb-32">
           <ProjectsBtn/>
